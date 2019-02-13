@@ -1,7 +1,7 @@
 {
   "name": "simple-vdom",
   "version": "1.0.0",
-  "description": "a simple v-dom implement with waltjs",
+  "description": "Learn virtual DOM technology and do some interesting experiments",
   "author": "cbbfcd <2890636389@qq.com>",
   "repository": {
     "type": "git",
@@ -10,7 +10,7 @@
   "keywords": [
     "vdom",
     "diff",
-    "webassembly"
+    "virtual dom"
   ],
   "main": "dist/vdom.js",
   "module": "dist/vdom.es.js",
@@ -22,8 +22,7 @@
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-walt": "^0.1.1",
-    "walt-compiler": "^0.21.0"
+    "rollup-plugin-walt": "^0.1.2"
   },
   "scripts": {
     "build": "rollup -c",

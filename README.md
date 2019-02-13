@@ -4,13 +4,11 @@
 
 There are a lot of articles and code implementations for virtual doms. 
 
-This library mainly refers to the implementation in [hyperapp](https://github.com/jorgebucaran/hyperapp/blob/V2/README.md), based on the ability of [waltjs](https://github.com/ballercat/walt) to give it webassmbly.
+This library mainly refers to the implementation in [hyperapp](https://github.com/jorgebucaran/hyperapp/blob/V2/README.md)
 
 There are a lot of excellent practices on how to implement virtual DOM, and after reviewing many different ideas, record the implementation process.
 
 Just for learning, I have to emphasize it again.
-
-This is an attempt. Does the implementation of the diff algorithm with [webassembly](https://developer.mozilla.org/zh-CN/docs/WebAssembly) lead to a significant performance boost?
 
 so, just fork or clone this repo and build it better via a PR. thanks! happy new year!
 

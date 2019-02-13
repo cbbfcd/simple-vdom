@@ -1,6 +1,6 @@
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
-import walt from 'rollup-plugin-walt';
+import walt from 'rollup-plugin-walt'
 import pkg from './package.json';
 
 export default [
