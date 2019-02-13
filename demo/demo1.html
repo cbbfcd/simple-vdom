@@ -11,6 +11,7 @@
   <div id='root'></div>
 </body>
 <script>
+  // copy from https://codesandbox.io/s/mpmo2yy69
   const el = vdom.element
   const render = vdom.render
   const mount = vdom.mount
@@ -28,5 +29,19 @@
         ...Array.from({length: count}, () => el('img', {src: 'https://media.giphy.com/media/cuPm4p4pClZVC/giphy.gif'}))
       ]
     )
+
+  let appTree = createVApp(0)
+  const $app = render(appTree)
+  let $root = mount($app, document.querySelector('#root'))
+
+  setInterval(() => {
+    const n = Math.floor(Math.random() * 10)
+    const newAppTree = createVApp(n)
+    const patch = diff(appTree, newAppTree)
+
+    $root = patch($root)
+
+    appTree = newAppTree
+  }, 1000)
 </script>
 </html>
