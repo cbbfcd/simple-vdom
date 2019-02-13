@@ -81,7 +81,7 @@ export const element = (name, props, ...args) => {
       for(length = node.length; length--;) {
         rest.push(node[length])
       }
-    } else if (node === false || node ===null || node === true) {
+    } else if (node === false || node == null || node === true) {
     } else {
       children.push(typeof node === 'object' ? node : createTextVNode(node))
     }
