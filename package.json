@@ -1,0 +1,37 @@
+{
+  "name": "simple-vdom",
+  "version": "1.0.0",
+  "description": "a simple v-dom implement with waltjs",
+  "author": "cbbfcd <2890636389@qq.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cbbfcd/simple-vdom"
+  },
+  "keywords": [
+    "vdom",
+    "diff",
+    "webassembly"
+  ],
+  "main": "dist/vdom.js",
+  "module": "dist/vdom.es.js",
+  "browser": "dist/vdom.js",
+  "dependencies": {
+    "ms": "^2.0.0"
+  },
+  "devDependencies": {
+    "rollup": "^1.0.0",
+    "rollup-plugin-commonjs": "^9.2.0",
+    "rollup-plugin-node-resolve": "^4.0.0",
+    "rollup-plugin-walt": "^0.1.1",
+    "walt-compiler": "^0.21.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>v-dom demo01</title>
+  <script src="../dist/vdom.js"></script>
+</head>
+<body>
+  <div id='root'></div>
+</body>
+<script>
+  const el = vdom.element
+  const render = vdom.render
+  const mount = vdom.mount
+  const diff = vdom.diff
+
+  const createVApp = count => 
+    el(
+      'div',
+      {
+        id: 'app',
+        dataCount: count
+      },
+      [
+        `the current count is ${count}`,
+        ...Array.from({length: count}, () => el('img', {src: 'https://media.giphy.com/media/cuPm4p4pClZVC/giphy.gif'}))
+      ]
+    )
+</script>
+</html>
