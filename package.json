@@ -22,13 +22,15 @@
     "rollup": "^1.0.0",
     "rollup-plugin-commonjs": "^9.2.0",
     "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-walt": "^0.1.2"
+    "rollup-plugin-walt": "0.1.4",
+    "walt-compiler": "^0.21.0"
   },
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
     "test": "node test/test.js",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "gg": "node src/a.js"
   },
   "files": [
     "dist"
