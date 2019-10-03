@@ -1,5 +1,7 @@
 # vdom
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/cbbfcd/simple-vdom.svg)](https://greenkeeper.io/)
+
 ⚠️ This library is just a simple case of learning virtual dom technology and does not have the ability to practice in a production environment.
 
 There are a lot of articles and code implementations for virtual doms. 
