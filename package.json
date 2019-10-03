@@ -20,9 +20,9 @@
   },
   "devDependencies": {
     "rollup": "^1.0.0",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-node-resolve": "^4.0.0",
-    "rollup-plugin-walt": "0.1.4",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-walt": "0.1.5",
     "walt-compiler": "^0.21.0"
   },
   "scripts": {
